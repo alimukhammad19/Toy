@@ -1,0 +1,167 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://pub-static.fotor.com/assets/bg/c29b82e6-4f99-43b4-ac6c-edf333a8b5c8.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.invitation {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #444;
+    text-align: center;
+    border: 2px solid #f5f5f5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.invitation:hover {
+    box-shadow: 0 6px 25px rgba(214, 0, 81, 0.6);
+}
+
+header h1,
+.details h2 {
+    color: #d60051;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.time {
+    background: rgba(254, 182, 182, 0.9);
+    padding: 12px 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(214, 0, 81, 0.4);
+    transition: background-color 0.3s;
+    cursor: default;
+}
+
+.time:hover {
+    background-color: rgba(214, 0, 81, 0.8);
+    color: white;
+}
+
+.time span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 400;
+}
+
+.map-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: #d60051;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(214, 0, 81, 0.5);
+}
+
+.map-button:hover {
+    background-color: #bf0040;
+    box-shadow: 0 4px 15px rgba(191, 0, 64, 0.7);
+}
+
+/* Audio toggle button */
+.audio-toggle {
+    margin-top: 20px;
+    background-color: #d60051;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 3px 10px rgba(214, 0, 81, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-toggle:hover {
+    background-color: #bf0040;
+    box-shadow: 0 4px 15px rgba(191, 0, 64, 0.7);
+}
+
+.audio-toggle i {
+    margin-right: 8px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1023px) {
+    .countdown {
+        font-size: 1.4em;
+    }
+
+    .audio-toggle,
+    .map-button {
+        padding: 10px 25px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 719px) {
+    .countdown {
+        font-size: 1.2em;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .time {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.2em;
+    }
+
+    .audio-toggle,
+    .map-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 479px) {
+    .invitation {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .countdown {
+        flex-direction: column;
+        font-size: 1.1em;
+        gap: 8px;
+    }
+
+    .time {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    .audio-toggle,
+    .map-button {
+        padding: 8px 15px;
+        font-size: 0.85em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
