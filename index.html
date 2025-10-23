@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdulfayz va Kamronbeklarning Sunnat To'yi</title>
+
+    <!-- Font Awesome ikonalar uchun -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Sizning CSS faylingiz -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="invitation">
+        <header>
+            <h1>Hurmatli aziz mehmonimiz!</h1>
+            <p>
+                Sizni va oila a'zolaringizni aziz farzandlarimiz
+                <strong>Abdulfayz va Kamronbeklarning "Sunnat to'yi"</strong> munosabati bilan yoziladigan
+                to'y dasturxonimizga taklif etamiz.
+            </p>
+        </header>
+
+        <section class="details">
+            <p><strong>To'y boshlanish vaqti :</strong> 15.11.2025 / soat 9:00</p>
+            <p><strong>Hurmat bilan :</strong> Toshpo'lat bobo o'gli Mengnorov Husan aka xonadoni</p>
+            <p><strong>To'y manzili :</strong> Oltinsoy tumani Brilliant to'yxonasi</p>
+            <a href="https://maps.app.goo.gl/HQ1HHtQEtUC1iKRQ8" target="_blank" class="map-button"
+                rel="noopener noreferrer">
+                Karta orqali ochish
+            </a>
+        </section>
+
+        <div class="countdown">
+            <div id="days" class="time">00 <span>kun</span></div>
+            <div id="hours" class="time">00 <span>soat</span></div>
+            <div id="minutes" class="time">00 <span>daqiqalar</span></div>
+            <div id="seconds" class="time">00 <span>soniyalar</span></div>
+        </div>
+
+        <!-- Audio element -->
+        <audio id="backgroundAudio" loop>
+            <source src="./music.mp3" type="audio/mpeg" />
+            Sizning brauzeringiz audio elementni qo‘llab-quvvatlamaydi.
+        </audio>
+
+        <!-- Audio boshqaruv tugmasi -->
+        <button id="audioToggle" class="audio-toggle" aria-label="Musiqani yoqish/o'chirish">
+            <i id="audioIcon" class="fas fa-volume-up"></i> Musiqani o‘chirish
+        </button>
+    </div>
+
+    <!-- Sizning JS faylingiz -->
+    <script src="script.js"></script>
+</body>
+
+</html>
