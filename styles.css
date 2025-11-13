@@ -108,7 +108,7 @@ header h1,
 }
 
 /* Responsive breakpoints */
-@media (max-width: 1020px) {
+@media (max-width: 1019px) {
     .countdown {
         font-size: 1.4em;
     }
@@ -120,7 +120,7 @@ header h1,
     }
 }
 
-@media (max-width: 718px) {
+@media (max-width: 717px) {
     .countdown {
         font-size: 1.2em;
         flex-wrap: wrap;
@@ -140,7 +140,7 @@ header h1,
     }
 }
 
-@media (max-width: 478px) {
+@media (max-width: 477px) {
     .invitation {
         padding: 15px;
         max-width: 90%;
