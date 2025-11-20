@@ -1,3 +1,6 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body,
 html {
     height: 100%;
@@ -6,162 +9,132 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: url('https://pub-static.fotor.com/assets/bg/c29b82e6-4f99-43b4-ac6c-edf333a8b5c8.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
+/* CARD - asosiy oq blok */
 .invitation {
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.95);
-    color: #444;
+    max-width: 480px;
+    margin: 20px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
     text-align: center;
-    border: 2px solid #f5f5f5;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    transition: box-shadow 0.3s ease;
+    color: #333;
+    border: 1px solid rgba(214, 0, 81, 0.15);
+    box-shadow: 0 4px 20px rgba(214, 0, 81, 0.2);
 }
 
 .invitation:hover {
-    box-shadow: 0 6px 25px rgba(214, 0, 81, 0.6);
+    box-shadow: 0 6px 30px rgba(214, 0, 81, 0.35);
 }
 
-header h1,
-.details h2 {
+/* HEADER */
+header h1 {
     color: #d60051;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
 }
 
-.countdown {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    font-size: 1.6em;
+header p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* VAQT BO‘LIMI */
+.details .vaqt {
+    background: #d60051;
+    padding: 3px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(214, 0, 81, 0.15);
+}
+
+.details .vaqt p {
+    margin: 0px 0;
     font-weight: 600;
-}
-
-.time {
-    background: rgba(254, 182, 182, 0.9);
-    padding: 12px 25px;
-    border-radius: 15px;
-    box-shadow: 0 2px 6px rgba(214, 0, 81, 0.4);
-    transition: background-color 0.3s;
-    cursor: default;
-}
-
-.time:hover {
-    background-color: rgba(214, 0, 81, 0.8);
+    font-size: 1.2rem;
     color: white;
 }
 
-.time span {
-    display: block;
-    font-size: 0.5em;
-    font-weight: 400;
+.details p {
+    margin: 8px 0;
+    font-size: 1rem;
 }
 
+/* TUGMA – MAP */
 .map-button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 12px 30px;
+    margin-top: 18px;
+    padding: 12px 28px;
     background-color: #d60051;
     color: white;
     text-decoration: none;
-    border-radius: 7px;
-    font-weight: 700;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 3px 10px rgba(214, 0, 81, 0.5);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 3px 12px rgba(214, 0, 81, 0.4);
 }
 
 .map-button:hover {
-    background-color: #bf0040;
-    box-shadow: 0 4px 15px rgba(191, 0, 64, 0.7);
+    background-color: #b70045;
+    box-shadow: 0 4px 18px rgba(214, 0, 81, 0.55);
 }
 
-/* Audio toggle button */
+/* AUDIO BUTTON */
 .audio-toggle {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #d60051;
     border: none;
     color: white;
-    padding: 12px 30px;
-    border-radius: 7px;
-    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 1em;
-    box-shadow: 0 3px 10px rgba(214, 0, 81, 0.5);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.98rem;
+    box-shadow: 0 3px 10px rgba(214, 0, 81, 0.4);
+    transition: 0.3s;
 }
 
 .audio-toggle:hover {
-    background-color: #bf0040;
-    box-shadow: 0 4px 15px rgba(191, 0, 64, 0.7);
+    background-color: #b70045;
+    box-shadow: 0 4px 15px rgba(191, 0, 64, 0.6);
 }
 
 .audio-toggle i {
     margin-right: 8px;
 }
 
-/* Responsive breakpoints */
-@media (max-width: 1019px) {
-    .countdown {
-        font-size: 1.4em;
-    }
-
-    .audio-toggle,
-    .map-button {
-        padding: 10px 25px;
-        font-size: 0.95em;
-    }
-}
-
-@media (max-width: 717px) {
-    .countdown {
-        font-size: 1.2em;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .time {
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 1.2em;
-    }
-
-    .audio-toggle,
-    .map-button {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 477px) {
+/* MOBIL RESPONSIVE (ASOSIY) */
+@media (max-width: 600px) {
     .invitation {
-        padding: 15px;
-        max-width: 90%;
+        padding: 18px;
+        max-width: 92%;
     }
 
-    .countdown {
-        flex-direction: column;
-        font-size: 1.1em;
-        gap: 8px;
+    header h1 {
+        font-size: 1.4rem;
     }
 
-    .time {
-        padding: 8px 15px;
-        font-size: 1em;
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .details p {
+        font-size: 0.95rem;
     }
 
     .audio-toggle,
     .map-button {
-        padding: 8px 15px;
-        font-size: 0.85em;
         width: 100%;
-        box-sizing: border-box;
+        padding: 12px;
+        font-size: 0.9rem;
     }
 }
