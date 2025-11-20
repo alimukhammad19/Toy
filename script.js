@@ -1,23 +1,13 @@
-// --- Audio boshqaruv ---
-
 const audio = document.getElementById('backgroundAudio');
 const audioToggle = document.getElementById('audioToggle');
 const audioIcon = document.getElementById('audioIcon');
 
-// Boshlanishda audio mutedan bo'lsin - autoplay ishlashi uchun
-audio.muted = true;
+// audio.muted = true;  // olib tashlandi
+// audio.play() sahifa yuklanganda chaqirilmaydi
 
-audio.play().catch(() => {
-    // Autoplay bloklansa (mobil brauzerlar), tugma yordamida yoqish kerak
-    audioToggle.textContent = "Musiqani yoqish";
-    audioIcon.classList.remove('fa-volume-up');
-    audioIcon.classList.add('fa-volume-mute');
-});
-
-// Foydalanuvchi tugmani bosganda audio ovozini boshqarish
 audioToggle.addEventListener('click', () => {
     if (audio.paused) {
-        audio.muted = false;
+        audio.muted = false; // agar kerak bo‘lsa
         audio.play();
         audioIcon.classList.remove('fa-volume-mute');
         audioIcon.classList.add('fa-volume-up');
@@ -31,5 +21,3 @@ audioToggle.addEventListener('click', () => {
         audioToggle.prepend(audioIcon);
     }
 });
-
-// Qo'shimcha: foydalanuvchi sahifa bo'ylab biror joyga bosganda audio ovozini yoqish uchun (ixtiyoriy)
