@@ -48,11 +48,12 @@ header p {
 }
 
 /* VAQT BO‘LIMI */
+
 .details .vaqt {
     background: #d60051;
     padding: 3px;
     border-radius: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     border: 1px solid rgba(214, 0, 81, 0.15);
 }
 
@@ -69,10 +70,16 @@ header p {
 }
 
 /* TUGMA – MAP */
+.ww {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .map-button {
     display: inline-block;
-    margin-top: 18px;
-    padding: 12px 28px;
+    margin-top: 3px;
+    padding: 0.75rem 1.7rem;
     background-color: #d60051;
     color: white;
     text-decoration: none;
@@ -82,6 +89,21 @@ header p {
     transition: 0.3s;
     box-shadow: 0 3px 12px rgba(214, 0, 81, 0.4);
 }
+
+.map-button {
+    display: inline-block;
+    /* hozircha */
+    /* => o‘rniga: */
+    display: block;
+    /* blok element sifatida */
+    width: auto;
+    /* div ichida to‘liq joy oladi */
+    box-sizing: border-box;
+    /* padding bilan width to‘g‘ri hisoblanadi */
+
+    text-align: center;
+}
+
 
 .map-button:hover {
     background-color: #b70045;
@@ -136,5 +158,10 @@ header p {
         width: 100%;
         padding: 12px;
         font-size: 0.9rem;
+    }
+
+    .map-button {
+        display: block;
+        width: 100%;
     }
 }
